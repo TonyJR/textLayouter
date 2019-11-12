@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA34B1E3236E8B6200CEDA23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA34B1E2236E8B6200CEDA23 /* main.m */; };
+		EA34B1E6236E8B6200CEDA23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA34B1E5236E8B6200CEDA23 /* AppDelegate.m */; };
+		EA34B1E9236E8B6200CEDA23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA34B1E8236E8B6200CEDA23 /* ViewController.m */; };
+		EA34B1EC236E8B6200CEDA23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA34B1EA236E8B6200CEDA23 /* Main.storyboard */; };
+		EA34B1EE236E8B6200CEDA23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA34B1ED236E8B6200CEDA23 /* Assets.xcassets */; };
+		EA34B1F1236E8B6200CEDA23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA34B1EF236E8B6200CEDA23 /* LaunchScreen.storyboard */; };
+		EA34B1FC236E8B6200CEDA23 /* OpenTypeJSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA34B1FB236E8B6200CEDA23 /* OpenTypeJSTests.m */; };
+		EA34B207236E8B6200CEDA23 /* OpenTypeJSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA34B206236E8B6200CEDA23 /* OpenTypeJSUITests.m */; };
+		EA34B215236E8B8B00CEDA23 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = EA34B214236E8B8B00CEDA23 /* index.html */; };
+		EA34B217236E957F00CEDA23 /* pangtouyuwawa.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA34B216236E957F00CEDA23 /* pangtouyuwawa.ttf */; };
+		EA34B219236F195000CEDA23 /* font.js in Resources */ = {isa = PBXBuildFile; fileRef = EA34B218236F195000CEDA23 /* font.js */; };
+		EA34B21D2371C6A300CEDA23 /* pangtouyuwawa1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA34B21A2371C6A300CEDA23 /* pangtouyuwawa1.ttf */; };
+		EA34B21E2371C6A300CEDA23 /* pangtouyuwawa2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA34B21B2371C6A300CEDA23 /* pangtouyuwawa2.ttf */; };
+		EA34B21F2371C6A300CEDA23 /* pangtouyuwawa3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA34B21C2371C6A300CEDA23 /* pangtouyuwawa3.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA34B1F8236E8B6200CEDA23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA34B1D6236E8B6200CEDA23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA34B1DD236E8B6200CEDA23;
+			remoteInfo = OpenTypeJS;
+		};
+		EA34B203236E8B6200CEDA23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA34B1D6236E8B6200CEDA23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA34B1DD236E8B6200CEDA23;
+			remoteInfo = OpenTypeJS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA34B1DE236E8B6200CEDA23 /* OpenTypeJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTypeJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA34B1E2236E8B6200CEDA23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA34B1E4236E8B6200CEDA23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA34B1E5236E8B6200CEDA23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA34B1E7236E8B6200CEDA23 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EA34B1E8236E8B6200CEDA23 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA34B1EB236E8B6200CEDA23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA34B1ED236E8B6200CEDA23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA34B1F0236E8B6200CEDA23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA34B1F2236E8B6200CEDA23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA34B1F7236E8B6200CEDA23 /* OpenTypeJSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTypeJSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA34B1FB236E8B6200CEDA23 /* OpenTypeJSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenTypeJSTests.m; sourceTree = "<group>"; };
+		EA34B1FD236E8B6200CEDA23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA34B202236E8B6200CEDA23 /* OpenTypeJSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTypeJSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA34B206236E8B6200CEDA23 /* OpenTypeJSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenTypeJSUITests.m; sourceTree = "<group>"; };
+		EA34B208236E8B6200CEDA23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA34B214236E8B8B00CEDA23 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		EA34B216236E957F00CEDA23 /* pangtouyuwawa.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pangtouyuwawa.ttf; sourceTree = "<group>"; };
+		EA34B218236F195000CEDA23 /* font.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = font.js; sourceTree = "<group>"; };
+		EA34B21A2371C6A300CEDA23 /* pangtouyuwawa1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pangtouyuwawa1.ttf; sourceTree = "<group>"; };
+		EA34B21B2371C6A300CEDA23 /* pangtouyuwawa2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pangtouyuwawa2.ttf; sourceTree = "<group>"; };
+		EA34B21C2371C6A300CEDA23 /* pangtouyuwawa3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pangtouyuwawa3.ttf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA34B1DB236E8B6200CEDA23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA34B1F4236E8B6200CEDA23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA34B1FF236E8B6200CEDA23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA34B1D5236E8B6200CEDA23 = {
+			isa = PBXGroup;
+			children = (
+				EA34B1E0236E8B6200CEDA23 /* OpenTypeJS */,
+				EA34B1FA236E8B6200CEDA23 /* OpenTypeJSTests */,
+				EA34B205236E8B6200CEDA23 /* OpenTypeJSUITests */,
+				EA34B1DF236E8B6200CEDA23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA34B1DF236E8B6200CEDA23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA34B1DE236E8B6200CEDA23 /* OpenTypeJS.app */,
+				EA34B1F7236E8B6200CEDA23 /* OpenTypeJSTests.xctest */,
+				EA34B202236E8B6200CEDA23 /* OpenTypeJSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA34B1E0236E8B6200CEDA23 /* OpenTypeJS */ = {
+			isa = PBXGroup;
+			children = (
+				EA34B21A2371C6A300CEDA23 /* pangtouyuwawa1.ttf */,
+				EA34B21B2371C6A300CEDA23 /* pangtouyuwawa2.ttf */,
+				EA34B21C2371C6A300CEDA23 /* pangtouyuwawa3.ttf */,
+				EA34B216236E957F00CEDA23 /* pangtouyuwawa.ttf */,
+				EA34B1E4236E8B6200CEDA23 /* AppDelegate.h */,
+				EA34B1E5236E8B6200CEDA23 /* AppDelegate.m */,
+				EA34B1E7236E8B6200CEDA23 /* ViewController.h */,
+				EA34B1E8236E8B6200CEDA23 /* ViewController.m */,
+				EA34B1EA236E8B6200CEDA23 /* Main.storyboard */,
+				EA34B1ED236E8B6200CEDA23 /* Assets.xcassets */,
+				EA34B1EF236E8B6200CEDA23 /* LaunchScreen.storyboard */,
+				EA34B1F2236E8B6200CEDA23 /* Info.plist */,
+				EA34B1E1236E8B6200CEDA23 /* Supporting Files */,
+				EA34B214236E8B8B00CEDA23 /* index.html */,
+				EA34B218236F195000CEDA23 /* font.js */,
+			);
+			path = OpenTypeJS;
+			sourceTree = "<group>";
+		};
+		EA34B1E1236E8B6200CEDA23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA34B1E2236E8B6200CEDA23 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA34B1FA236E8B6200CEDA23 /* OpenTypeJSTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA34B1FB236E8B6200CEDA23 /* OpenTypeJSTests.m */,
+				EA34B1FD236E8B6200CEDA23 /* Info.plist */,
+			);
+			path = OpenTypeJSTests;
+			sourceTree = "<group>";
+		};
+		EA34B205236E8B6200CEDA23 /* OpenTypeJSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA34B206236E8B6200CEDA23 /* OpenTypeJSUITests.m */,
+				EA34B208236E8B6200CEDA23 /* Info.plist */,
+			);
+			path = OpenTypeJSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA34B1DD236E8B6200CEDA23 /* OpenTypeJS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA34B20B236E8B6200CEDA23 /* Build configuration list for PBXNativeTarget "OpenTypeJS" */;
+			buildPhases = (
+				EA34B1DA236E8B6200CEDA23 /* Sources */,
+				EA34B1DB236E8B6200CEDA23 /* Frameworks */,
+				EA34B1DC236E8B6200CEDA23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenTypeJS;
+			productName = OpenTypeJS;
+			productReference = EA34B1DE236E8B6200CEDA23 /* OpenTypeJS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA34B1F6236E8B6200CEDA23 /* OpenTypeJSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA34B20E236E8B6200CEDA23 /* Build configuration list for PBXNativeTarget "OpenTypeJSTests" */;
+			buildPhases = (
+				EA34B1F3236E8B6200CEDA23 /* Sources */,
+				EA34B1F4236E8B6200CEDA23 /* Frameworks */,
+				EA34B1F5236E8B6200CEDA23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA34B1F9236E8B6200CEDA23 /* PBXTargetDependency */,
+			);
+			name = OpenTypeJSTests;
+			productName = OpenTypeJSTests;
+			productReference = EA34B1F7236E8B6200CEDA23 /* OpenTypeJSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA34B201236E8B6200CEDA23 /* OpenTypeJSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA34B211236E8B6200CEDA23 /* Build configuration list for PBXNativeTarget "OpenTypeJSUITests" */;
+			buildPhases = (
+				EA34B1FE236E8B6200CEDA23 /* Sources */,
+				EA34B1FF236E8B6200CEDA23 /* Frameworks */,
+				EA34B200236E8B6200CEDA23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA34B204236E8B6200CEDA23 /* PBXTargetDependency */,
+			);
+			name = OpenTypeJSUITests;
+			productName = OpenTypeJSUITests;
+			productReference = EA34B202236E8B6200CEDA23 /* OpenTypeJSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA34B1D6236E8B6200CEDA23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Tony;
+				TargetAttributes = {
+					EA34B1DD236E8B6200CEDA23 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G58WYBWUGY;
+						ProvisioningStyle = Automatic;
+					};
+					EA34B1F6236E8B6200CEDA23 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G58WYBWUGY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA34B1DD236E8B6200CEDA23;
+					};
+					EA34B201236E8B6200CEDA23 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G58WYBWUGY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA34B1DD236E8B6200CEDA23;
+					};
+				};
+			};
+			buildConfigurationList = EA34B1D9236E8B6200CEDA23 /* Build configuration list for PBXProject "OpenTypeJS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA34B1D5236E8B6200CEDA23;
+			productRefGroup = EA34B1DF236E8B6200CEDA23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA34B1DD236E8B6200CEDA23 /* OpenTypeJS */,
+				EA34B1F6236E8B6200CEDA23 /* OpenTypeJSTests */,
+				EA34B201236E8B6200CEDA23 /* OpenTypeJSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA34B1DC236E8B6200CEDA23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA34B21F2371C6A300CEDA23 /* pangtouyuwawa3.ttf in Resources */,
+				EA34B1F1236E8B6200CEDA23 /* LaunchScreen.storyboard in Resources */,
+				EA34B215236E8B8B00CEDA23 /* index.html in Resources */,
+				EA34B1EE236E8B6200CEDA23 /* Assets.xcassets in Resources */,
+				EA34B219236F195000CEDA23 /* font.js in Resources */,
+				EA34B21E2371C6A300CEDA23 /* pangtouyuwawa2.ttf in Resources */,
+				EA34B21D2371C6A300CEDA23 /* pangtouyuwawa1.ttf in Resources */,
+				EA34B1EC236E8B6200CEDA23 /* Main.storyboard in Resources */,
+				EA34B217236E957F00CEDA23 /* pangtouyuwawa.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA34B1F5236E8B6200CEDA23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA34B200236E8B6200CEDA23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA34B1DA236E8B6200CEDA23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA34B1E9236E8B6200CEDA23 /* ViewController.m in Sources */,
+				EA34B1E6236E8B6200CEDA23 /* AppDelegate.m in Sources */,
+				EA34B1E3236E8B6200CEDA23 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA34B1F3236E8B6200CEDA23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA34B1FC236E8B6200CEDA23 /* OpenTypeJSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA34B1FE236E8B6200CEDA23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA34B207236E8B6200CEDA23 /* OpenTypeJSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA34B1F9236E8B6200CEDA23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA34B1DD236E8B6200CEDA23 /* OpenTypeJS */;
+			targetProxy = EA34B1F8236E8B6200CEDA23 /* PBXContainerItemProxy */;
+		};
+		EA34B204236E8B6200CEDA23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA34B1DD236E8B6200CEDA23 /* OpenTypeJS */;
+			targetProxy = EA34B203236E8B6200CEDA23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA34B1EA236E8B6200CEDA23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA34B1EB236E8B6200CEDA23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA34B1EF236E8B6200CEDA23 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA34B1F0236E8B6200CEDA23 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA34B209236E8B6200CEDA23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA34B20A236E8B6200CEDA23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA34B20C236E8B6200CEDA23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G58WYBWUGY;
+				INFOPLIST_FILE = OpenTypeJS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.OpenTypeJS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA34B20D236E8B6200CEDA23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G58WYBWUGY;
+				INFOPLIST_FILE = OpenTypeJS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.OpenTypeJS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EA34B20F236E8B6200CEDA23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G58WYBWUGY;
+				INFOPLIST_FILE = OpenTypeJSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.OpenTypeJSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenTypeJS.app/OpenTypeJS";
+			};
+			name = Debug;
+		};
+		EA34B210236E8B6200CEDA23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G58WYBWUGY;
+				INFOPLIST_FILE = OpenTypeJSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.OpenTypeJSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenTypeJS.app/OpenTypeJS";
+			};
+			name = Release;
+		};
+		EA34B212236E8B6200CEDA23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = G58WYBWUGY;
+				INFOPLIST_FILE = OpenTypeJSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.OpenTypeJSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OpenTypeJS;
+			};
+			name = Debug;
+		};
+		EA34B213236E8B6200CEDA23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = G58WYBWUGY;
+				INFOPLIST_FILE = OpenTypeJSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.OpenTypeJSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OpenTypeJS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA34B1D9236E8B6200CEDA23 /* Build configuration list for PBXProject "OpenTypeJS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA34B209236E8B6200CEDA23 /* Debug */,
+				EA34B20A236E8B6200CEDA23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA34B20B236E8B6200CEDA23 /* Build configuration list for PBXNativeTarget "OpenTypeJS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA34B20C236E8B6200CEDA23 /* Debug */,
+				EA34B20D236E8B6200CEDA23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA34B20E236E8B6200CEDA23 /* Build configuration list for PBXNativeTarget "OpenTypeJSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA34B20F236E8B6200CEDA23 /* Debug */,
+				EA34B210236E8B6200CEDA23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA34B211236E8B6200CEDA23 /* Build configuration list for PBXNativeTarget "OpenTypeJSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA34B212236E8B6200CEDA23 /* Debug */,
+				EA34B213236E8B6200CEDA23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA34B1D6236E8B6200CEDA23 /* Project object */;
+}
