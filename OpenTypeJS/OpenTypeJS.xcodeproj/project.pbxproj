@@ -21,6 +21,8 @@
 		EA34B21D2371C6A300CEDA23 /* pangtouyuwawa1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA34B21A2371C6A300CEDA23 /* pangtouyuwawa1.ttf */; };
 		EA34B21E2371C6A300CEDA23 /* pangtouyuwawa2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA34B21B2371C6A300CEDA23 /* pangtouyuwawa2.ttf */; };
 		EA34B21F2371C6A300CEDA23 /* pangtouyuwawa3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA34B21C2371C6A300CEDA23 /* pangtouyuwawa3.ttf */; };
+		EAABD86F237BEDC800D2BE60 /* wawati.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAABD86E237BEDC800D2BE60 /* wawati.ttf */; };
+		EAABD875237C18D600D2BE60 /* notdef.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAABD874237C18D600D2BE60 /* notdef.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		EA34B21A2371C6A300CEDA23 /* pangtouyuwawa1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pangtouyuwawa1.ttf; sourceTree = "<group>"; };
 		EA34B21B2371C6A300CEDA23 /* pangtouyuwawa2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pangtouyuwawa2.ttf; sourceTree = "<group>"; };
 		EA34B21C2371C6A300CEDA23 /* pangtouyuwawa3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pangtouyuwawa3.ttf; sourceTree = "<group>"; };
+		EAABD86E237BEDC800D2BE60 /* wawati.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = wawati.ttf; sourceTree = "<group>"; };
+		EAABD874237C18D600D2BE60 /* notdef.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = notdef.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 				EA34B21B2371C6A300CEDA23 /* pangtouyuwawa2.ttf */,
 				EA34B21C2371C6A300CEDA23 /* pangtouyuwawa3.ttf */,
 				EA34B216236E957F00CEDA23 /* pangtouyuwawa.ttf */,
+				EAABD874237C18D600D2BE60 /* notdef.ttf */,
+				EAABD86E237BEDC800D2BE60 /* wawati.ttf */,
 				EA34B1E4236E8B6200CEDA23 /* AppDelegate.h */,
 				EA34B1E5236E8B6200CEDA23 /* AppDelegate.m */,
 				EA34B1E7236E8B6200CEDA23 /* ViewController.h */,
@@ -225,7 +231,7 @@
 				TargetAttributes = {
 					EA34B1DD236E8B6200CEDA23 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = G58WYBWUGY;
+						DevelopmentTeam = 8YWC8ZUV92;
 						ProvisioningStyle = Automatic;
 					};
 					EA34B1F6236E8B6200CEDA23 = {
@@ -247,6 +253,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -268,8 +275,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA34B21F2371C6A300CEDA23 /* pangtouyuwawa3.ttf in Resources */,
+				EAABD875237C18D600D2BE60 /* notdef.ttf in Resources */,
 				EA34B1F1236E8B6200CEDA23 /* LaunchScreen.storyboard in Resources */,
 				EA34B215236E8B8B00CEDA23 /* index.html in Resources */,
+				EAABD86F237BEDC800D2BE60 /* wawati.ttf in Resources */,
 				EA34B1EE236E8B6200CEDA23 /* Assets.xcassets in Resources */,
 				EA34B219236F195000CEDA23 /* font.js in Resources */,
 				EA34B21E2371C6A300CEDA23 /* pangtouyuwawa2.ttf in Resources */,
@@ -449,8 +458,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G58WYBWUGY;
+				DEVELOPMENT_TEAM = 8YWC8ZUV92;
 				INFOPLIST_FILE = OpenTypeJS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.OpenTypeJS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,8 +471,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G58WYBWUGY;
+				DEVELOPMENT_TEAM = 8YWC8ZUV92;
 				INFOPLIST_FILE = OpenTypeJS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.OpenTypeJS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -538,6 +549,7 @@
 				EA34B20D236E8B6200CEDA23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA34B20E236E8B6200CEDA23 /* Build configuration list for PBXNativeTarget "OpenTypeJSTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +558,7 @@
 				EA34B210236E8B6200CEDA23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA34B211236E8B6200CEDA23 /* Build configuration list for PBXNativeTarget "OpenTypeJSUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +567,7 @@
 				EA34B213236E8B6200CEDA23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

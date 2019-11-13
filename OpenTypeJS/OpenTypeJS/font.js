@@ -1,6 +1,6 @@
 function TOFont (fontList,callback) {
     this.fontList = {};
-    
+    this.notdef;
     this.loadFonts = function(toFont,fontList,index,callback){
         if (index < fontList.length){
             var path = fontList[index];
@@ -12,9 +12,18 @@ function TOFont (fontList,callback) {
                     toFont.loadFonts(toFont,fontList,index+1,callback);
                 }
             });
-
+            
         }else{
-            callback(null);
+            //加载补充错误字体
+            opentype.load("./notdef.ttf",function(error,font){
+                if (error){
+                          callback(error);
+                }else{
+                          toFont.notdef= font;
+                          callback(null);
+                }
+            });
+            
         }
     };
     this.readGlyph = function(char){
@@ -24,7 +33,8 @@ function TOFont (fontList,callback) {
                 return glyph;
             }
         }
-        return null;
+        
+        return this.notdef.charToGlyph(char);
     };
     
     
@@ -48,6 +58,15 @@ function TOParagraph (str,font,width,fontSize = 14) {
         
         for (i=0;i<strArr.length;i++){
             tempStr = strArr[i];
+            //换行符处理
+            if (tempStr == "\n"){
+                lines.push(new TOLine(this.font, fontSize, lineStr));
+                linePaths = [];
+                lineWidth = 0;
+                lineStr = "";
+                continue;
+            }
+            
             glyph = this.font.readGlyph(tempStr);
             
             if (!glyph){
@@ -60,18 +79,20 @@ function TOParagraph (str,font,width,fontSize = 14) {
                 linePaths.push(path);
                 lineStr += tempStr;
             }else{
-                lines.push(new TOLine(linePaths,lineStr));
+                lines.push(new TOLine(this.font, fontSize, lineStr));
                 linePaths = [];
                 lineWidth = 0;
                 lineStr = "";
             }
         }
         if (lineStr.length > 0){
-            lines.push(new TOLine(linePaths,lineStr));
+            lines.push(new TOLine(this.font, fontSize, lineStr));
         }
         
         return lines;
     }
+    
+    
     this.lines = this.readLines(this.width);
     
     this.getSize = function (){
@@ -79,26 +100,71 @@ function TOParagraph (str,font,width,fontSize = 14) {
         for (var key in this.lines){
             var line = this.lines[key];
             height += line.getSize().height;
+            height += this.fontSize/2;
         }
+        if (height == 0){
+            height = this.fontSize;
+        }
+        width = Math.ceil(width);
+        height = Math.ceil(height);
         return {"width":this.width,"height":height};
-
     }
     
+    this.draw = function(ctx, x=0, y=0, scale = 2.0){
+        
+        for (var key in this.lines){
+            var line = this.lines[key];
+            var lineHeight = line.getSize().height;
+            
+            y += lineHeight;
+            line.draw(ctx, x ,y,scale);
+            y += this.fontSize/2;
+        }
+    }
 };
 
-function TOLine (paths,str) {
-    this.lineStr = str;
-    this.paths = paths;
+function TOLine (font,fontSize,lineStr) {
+    this.lineStr = lineStr;
+    this.font = font;
+    this.fontSize = fontSize;
     this.getSize = function (){
+        var strArr = Array.from(this.lineStr);
         var width = 0,height = 0;
-        for (var key in this.paths){
-            var path = this.paths[key];
+        for (i=0;i<strArr.length;i++){
+            tempStr = strArr[i];
+
+            glyph = this.font.readGlyph(tempStr);
+            if (!glyph){
+                continue;
+            }
+            path = glyph.getPath(0, 0, this.fontSize);
             box = path.getBoundingBox();
-            if (box.y2 > height){
-                height = box.y2;
+            
+            if (-box.y1 > height){
+                height = -box.y1;
             }
             width += box.x2;
         }
+        
         return {"width":width,"height":height};
+    };
+    this.draw = function (ctx, x = 0, y = 0, scale = 2){
+        
+        x = x *scale;
+        y = y *scale;
+        var strArr = Array.from(this.lineStr);
+        
+        for (i=0;i<strArr.length;i++){
+            tempStr = strArr[i];
+            glyph = this.font.readGlyph(tempStr);
+            if (!glyph){
+                continue;
+            }
+            path = glyph.getPath(x, y, this.fontSize *scale);
+            path.draw(ctx)
+
+            box = path.getBoundingBox();
+            x = box.x2;
+        }
     }
 }

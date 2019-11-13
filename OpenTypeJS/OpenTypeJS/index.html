@@ -6,12 +6,13 @@
         <script src="./font.js"></script>
     </head>
     <body onload="loadData()">
-        <canvas style="width:300px;height:100px"/>
+        <canvas id="canvas" width="600" height="200" style="width:300px;height:100px"/>
         <script language="javascript">
             function loadData (){
-                toFont = new TOFont(["./pangtouyuwawa.ttf"],function(error){
+                toFont = new TOFont(["wawati.ttf","./pangtouyuwawa.ttf"],function(error){
                                     if (!error){
-                                    paragraph = new TOParagraph("pa.中文🐙",toFont,200);
+                                    paragraph = new TOParagraph("1鱻\n234567890abcdefghijklmnopqrstuvwxyz中文测试哈哈哈哈哈翟燹鱻",toFont,200,14);
+                                    paragraph.draw(document.getElementById("canvas").getContext('2d'),0,20);
                                     console.log(paragraph.getSize());
                                     }
                                     });
