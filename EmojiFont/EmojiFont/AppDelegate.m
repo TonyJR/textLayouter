@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "EmojiFont.h"
 
+#define kPageWidth 2000
+#define kPageHeight 2000
+
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
@@ -18,10 +21,13 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-    NSArray<NSString *> *arr = [EmojiFont allEmojiChar];
-    NSDictionary *dic = @{NSFontAttributeName: [NSFont systemFontOfSize:100]};
+    NSMutableString *jsonStr = [NSMutableString string];
     
-    NSImage *image = [[NSImage alloc] initWithSize:NSMakeSize(5000, 5000)];
+    NSArray<NSString *> *arr = [EmojiFont allEmojiChar];
+    NSDictionary *dic = @{NSFontAttributeName: [NSFont systemFontOfSize:50]};
+    
+    NSImage *image = [[NSImage alloc] initWithSize:NSMakeSize(kPageWidth, kPageHeight)];
+    
     [image lockFocus];
     NSPoint point = NSMakePoint(0, 0);
     float lineHeight = 0;
@@ -30,7 +36,7 @@
         size.width = ceil(size.width);
         size.height = ceil(size.height);
 
-        if (point.x + size.width > 5000) {
+        if (point.x + size.width > kPageWidth) {
             point.y += lineHeight;
             lineHeight = 0;
             point.x = 0;
@@ -38,13 +44,31 @@
         if (lineHeight < size.height) {
             lineHeight = size.height;
         }
-        [c drawAtPoint:point withAttributes:dic];
-        NSLog(@"%f,%f",point.x,point.y);
+        //坐标系转换，y轴翻转
+        NSPoint imgPoint = NSMakePoint(point.x, kPageHeight - point.y - size.height);
+        [c drawAtPoint:imgPoint withAttributes:dic];
+//        NSLog(@"%f,%f",point.x,point.y);
+        if (jsonStr.length > 0){
+            [jsonStr appendString:@","];
+        }
+        [jsonStr appendFormat:@"'%@':{x:%0.0f,y:%0.0f,w:%0.0f,h:%0.0f}",c,point.x * 2 ,point.y * 2,size.width * 2 ,size.height * 2];
         point.x += size.width;
     }
+    [jsonStr insertString:@"var TOEmojiLib = {" atIndex:0];
+    [jsonStr appendString:@"}"];
+
+
+    NSError *error;
+    [jsonStr writeToFile:[@"~/Documents/emoji_lib.js" stringByExpandingTildeInPath] atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    if (error) {
+        NSLog(@"导出失败:%@",error);
+    }else{
+        NSLog(@"导出成功");
+    }
+    
     [image unlockFocus];
     [image lockFocus];
-    NSBitmapImageRep *bits = [[NSBitmapImageRep alloc] initWithFocusedViewRect:NSMakeRect(0, 0, 5000, 5000)];
+    NSBitmapImageRep *bits = [[NSBitmapImageRep alloc] initWithFocusedViewRect:NSMakeRect(0, 0, image.size.width, image.size.height)];
     [image unlockFocus];
 
     //再设置后面要用到得 props属性
@@ -55,7 +79,7 @@
     NSData *imageData = [bits representationUsingType:NSPNGFileType properties:imageProps];
     
     //设定好文件路径后进行存储就ok了
-    BOOL y = [imageData writeToFile:[[NSString stringWithString:@"~/Documents/test1.png"] stringByExpandingTildeInPath]atomically:YES];    //保存的文件路径一定要是绝对路径，相对路径不行
+    BOOL y = [imageData writeToFile:[@"~/Documents/emoji.png" stringByExpandingTildeInPath]atomically:YES];    //保存的文件路径一定要是绝对路径，相对路径不行
     NSLog(@"Save Image: %d", y);
 }
     

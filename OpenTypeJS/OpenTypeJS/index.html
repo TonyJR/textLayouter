@@ -2,17 +2,23 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <script src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <script src="./opentype.min.js"></script>
+        <script src="./emoji_lib.js"></script>
+        <script src="./emoji.js"></script>
         <script src="./font.js"></script>
     </head>
     <body onload="loadData()">
-        <canvas id="canvas" width="600" height="200" style="width:300px;height:100px"/>
+        <canvas id="canvas1" width="600" height="200" style="width:300px;height:100px"></canvas>
+        
         <script language="javascript">
             function loadData (){
-                toFont = new TOFont(["wawati.ttf","./pangtouyuwawa.ttf"],function(error){
+                toFont = new TOFont(["./wawati.ttf","./pangtouyuwawa.ttf"],function(error){
                                     if (!error){
-                                    paragraph = new TOParagraph("1鱻\n234567890abcdefghijklmnopqrstuvwxyz中文测试哈哈哈哈哈翟燹鱻",toFont,200,14);
-                                    paragraph.draw(document.getElementById("canvas").getContext('2d'),0,20);
+                                    paragraph = new TOParagraph("1🐙鱻111\n234🙈🙉🙊🐵🐒🐶🐕🐩🐺🐱😺😸😹😻😼😽🙀😿😾🐈🐯🐅🐆🐴🐎🐮🐂🐃🐄🐷🐖🐗🐽🐏🐑🐐🐪🐫🐘🐭🐁🐀🐹🐰🐇🐻🐨🐼🐾🐔🐓🐣🐤🐥🐦🐧🐸🐊🐢🐍🐲🐉🐳🐋🐬🐟🐠🐡🐙🐚🐌🐛🐜🐝🐞🦋\
+                                                                💐🌸💮🌹🌺🌻🌼🌷🌱🌲🌳🌴🌵🌾🌿🍀🍁🍂🍃567890abcdefghijklmnopqrstuvwxyz中文测试哈哈哈哈哈翟燹鱻",toFont,300,14);
+                                    paragraph.draw(document.getElementById("canvas1").getContext('2d'),0,20,2);
+<!--                                    paragraph.draw(document.getElementById("canvas2").getContext('2d'),0,20,10);-->
                                     console.log(paragraph.getSize());
                                     }
                                     });

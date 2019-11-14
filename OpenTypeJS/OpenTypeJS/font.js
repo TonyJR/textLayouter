@@ -1,6 +1,8 @@
 function TOFont (fontList,callback) {
     this.fontList = {};
     this.notdef;
+    this.emoji;
+    
     this.loadFonts = function(toFont,fontList,index,callback){
         if (index < fontList.length){
             var path = fontList[index];
@@ -20,10 +22,13 @@ function TOFont (fontList,callback) {
                           callback(error);
                 }else{
                           toFont.notdef= font;
-                          callback(null);
+                          toFont.emoji = new TOEmojiFont();
+                          toFont.emoji.load(function(error){
+                                                callback(error);
+                                            });
+                          
                 }
             });
-            
         }
     };
     this.readGlyph = function(char){
@@ -34,6 +39,10 @@ function TOFont (fontList,callback) {
             }
         }
         
+        var glyph = this.emoji.charToGlyph(char);
+        if (glyph){
+            return glyph;
+        }
         return this.notdef.charToGlyph(char);
     };
     
@@ -72,6 +81,7 @@ function TOParagraph (str,font,width,fontSize = 14) {
             if (!glyph){
                 continue;
             }
+            
             path = glyph.getPath(0, 0, this.fontSize);
             box = path.getBoundingBox();
             if (lineWidth + box.x2 < width){
@@ -105,8 +115,8 @@ function TOParagraph (str,font,width,fontSize = 14) {
         if (height == 0){
             height = this.fontSize;
         }
-        width = Math.ceil(width);
-        height = Math.ceil(height);
+//        width = Math.ceil(width);
+//        height = Math.ceil(height);
         return {"width":this.width,"height":height};
     }
     
@@ -148,7 +158,7 @@ function TOLine (font,fontSize,lineStr) {
         
         return {"width":width,"height":height};
     };
-    this.draw = function (ctx, x = 0, y = 0, scale = 2){
+    this.draw = function (ctx, x = 0, y = 0, scale = 2.0){
         
         x = x *scale;
         y = y *scale;

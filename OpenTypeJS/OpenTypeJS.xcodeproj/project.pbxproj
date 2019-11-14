@@ -21,6 +21,10 @@
 		EA34B21D2371C6A300CEDA23 /* pangtouyuwawa1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA34B21A2371C6A300CEDA23 /* pangtouyuwawa1.ttf */; };
 		EA34B21E2371C6A300CEDA23 /* pangtouyuwawa2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA34B21B2371C6A300CEDA23 /* pangtouyuwawa2.ttf */; };
 		EA34B21F2371C6A300CEDA23 /* pangtouyuwawa3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA34B21C2371C6A300CEDA23 /* pangtouyuwawa3.ttf */; };
+		EA816B4F237D23E200AAB953 /* emoji.png in Resources */ = {isa = PBXBuildFile; fileRef = EA816B4E237D23E200AAB953 /* emoji.png */; };
+		EA816B51237D24F800AAB953 /* emoji.js in Resources */ = {isa = PBXBuildFile; fileRef = EA816B50237D24F800AAB953 /* emoji.js */; };
+		EA816B53237D571E00AAB953 /* emoji_lib.js in Resources */ = {isa = PBXBuildFile; fileRef = EA816B52237D571E00AAB953 /* emoji_lib.js */; };
+		EA816B55237D64BA00AAB953 /* opentype.min.js in Resources */ = {isa = PBXBuildFile; fileRef = EA816B54237D64BA00AAB953 /* opentype.min.js */; };
 		EAABD86F237BEDC800D2BE60 /* wawati.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAABD86E237BEDC800D2BE60 /* wawati.ttf */; };
 		EAABD875237C18D600D2BE60 /* notdef.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAABD874237C18D600D2BE60 /* notdef.ttf */; };
 /* End PBXBuildFile section */
@@ -65,6 +69,10 @@
 		EA34B21A2371C6A300CEDA23 /* pangtouyuwawa1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pangtouyuwawa1.ttf; sourceTree = "<group>"; };
 		EA34B21B2371C6A300CEDA23 /* pangtouyuwawa2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pangtouyuwawa2.ttf; sourceTree = "<group>"; };
 		EA34B21C2371C6A300CEDA23 /* pangtouyuwawa3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pangtouyuwawa3.ttf; sourceTree = "<group>"; };
+		EA816B4E237D23E200AAB953 /* emoji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emoji.png; sourceTree = "<group>"; };
+		EA816B50237D24F800AAB953 /* emoji.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = emoji.js; sourceTree = "<group>"; };
+		EA816B52237D571E00AAB953 /* emoji_lib.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = emoji_lib.js; sourceTree = "<group>"; };
+		EA816B54237D64BA00AAB953 /* opentype.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = opentype.min.js; sourceTree = "<group>"; };
 		EAABD86E237BEDC800D2BE60 /* wawati.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = wawati.ttf; sourceTree = "<group>"; };
 		EAABD874237C18D600D2BE60 /* notdef.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = notdef.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +125,7 @@
 		EA34B1E0236E8B6200CEDA23 /* OpenTypeJS */ = {
 			isa = PBXGroup;
 			children = (
+				EA816B4E237D23E200AAB953 /* emoji.png */,
 				EA34B21A2371C6A300CEDA23 /* pangtouyuwawa1.ttf */,
 				EA34B21B2371C6A300CEDA23 /* pangtouyuwawa2.ttf */,
 				EA34B21C2371C6A300CEDA23 /* pangtouyuwawa3.ttf */,
@@ -133,7 +142,10 @@
 				EA34B1F2236E8B6200CEDA23 /* Info.plist */,
 				EA34B1E1236E8B6200CEDA23 /* Supporting Files */,
 				EA34B214236E8B8B00CEDA23 /* index.html */,
+				EA816B54237D64BA00AAB953 /* opentype.min.js */,
 				EA34B218236F195000CEDA23 /* font.js */,
+				EA816B50237D24F800AAB953 /* emoji.js */,
+				EA816B52237D571E00AAB953 /* emoji_lib.js */,
 			);
 			path = OpenTypeJS;
 			sourceTree = "<group>";
@@ -277,12 +289,16 @@
 				EA34B21F2371C6A300CEDA23 /* pangtouyuwawa3.ttf in Resources */,
 				EAABD875237C18D600D2BE60 /* notdef.ttf in Resources */,
 				EA34B1F1236E8B6200CEDA23 /* LaunchScreen.storyboard in Resources */,
+				EA816B53237D571E00AAB953 /* emoji_lib.js in Resources */,
+				EA816B55237D64BA00AAB953 /* opentype.min.js in Resources */,
 				EA34B215236E8B8B00CEDA23 /* index.html in Resources */,
 				EAABD86F237BEDC800D2BE60 /* wawati.ttf in Resources */,
+				EA816B4F237D23E200AAB953 /* emoji.png in Resources */,
 				EA34B1EE236E8B6200CEDA23 /* Assets.xcassets in Resources */,
 				EA34B219236F195000CEDA23 /* font.js in Resources */,
 				EA34B21E2371C6A300CEDA23 /* pangtouyuwawa2.ttf in Resources */,
 				EA34B21D2371C6A300CEDA23 /* pangtouyuwawa1.ttf in Resources */,
+				EA816B51237D24F800AAB953 /* emoji.js in Resources */,
 				EA34B1EC236E8B6200CEDA23 /* Main.storyboard in Resources */,
 				EA34B217236E957F00CEDA23 /* pangtouyuwawa.ttf in Resources */,
 			);
