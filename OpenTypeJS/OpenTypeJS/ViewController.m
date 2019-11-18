@@ -23,17 +23,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    for (int i =0; i<10; i++) {
         WKWebView *webview = [[WKWebView alloc] init];
         [webview.configuration.preferences setValue:@YES forKey:@"allowFileAccessFromFileURLs"];
-        [webview loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"]]]];
+        [webview loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"app" ofType:@"html"]]]];
         //    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://opentype.js.org"]]];
         CGRect rect = self.view.bounds;
-        rect.origin.y = i * 100;
-        rect.size.height = 100;
         webview.frame = rect;
         [self.view addSubview:webview];
-    }
     
     
     

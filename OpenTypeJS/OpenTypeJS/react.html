@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hello React!</title>
+        <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+        <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+        <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+<!--        <script type="text/babel" src="./page.js"/>-->
+<!--        <script type="text/babel" src="./block.js"/>-->
+
+    </head>
+    <body>
+        
+        <div id="page1"></div>
+        
+        <script type="text/babel">
+            class TOBlock extends React.Component {
+                constructor(props){
+                    super(props);
+                    /*
+                     this.state = {
+                     scale:this.props.scale,
+                     text:this.props.data.text,
+                     };*/
+                };
+                render(props) {
+                    
+                    return <canvas
+                    width={this.props.width * this.props.scale}
+                    height={this.props.height * this.props.scale}
+                    style={
+                        {
+                            position:"absolute",
+                            top:this.props.y + "px",
+                            left:this.props.x + "px",
+                            width:this.props.width+"px",
+                            height:this.props.height+"px",
+                        }
+                    }/>;
+                }
+            };
+            class TOPage extends React.Component {
+                
+                constructor(props){
+                    super(props);
+                    this.state = {
+                        blockList:[]
+                    }
+                };
+                
+                render(props) {
+                    if (this.state.blockList){
+                        var children = this.state.blockList.map((item) =>
+                                                                <TOBlock
+                                                                key={item.id}
+                                                                type={item.type}
+                                                                scale={this.props.scale}
+                                                                x={item.x}
+                                                                y={item.y}
+                                                                width={item.width}
+                                                                height={item.height}
+                                                                text={item.text}
+                                                                >
+                                                                </TOBlock>
+                                                                );
+                    }
+                    
+                    if(!children){
+                        children = [];
+                    }
+                    return <div>{children}</div>;
+                }
+            };
+            
+            var blockList = [{id:1,text:"1111",type:1,x:100,y:100,width:100,height:100},
+                             {id:2,text:"2222",type:1,x:100,y:200,width:100,height:100},
+                             {id:3,text:"3333",type:1,x:100,y:300,width:100,height:100},
+                             {id:4,text:"4444",type:1,x:100,y:400,width:100,height:100},
+                             {id:5,text:"5555",type:1,x:100,y:500,width:100,height:100},
+                             ];
+        
+            var page = ReactDOM.render(
+                
+                <TOPage scale="2" width="100" height="100"></TOPage>,
+                document.getElementById('page1')
+            );
+            page.setState({blockList:blockList});
+        </script>
+        
+    </body>
+</html>

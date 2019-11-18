@@ -2,6 +2,7 @@ function TOFont (fontList,callback) {
     this.fontList = {};
     this.notdef;
     this.emoji;
+    this.isReady = false;
     
     this.loadFonts = function(toFont,fontList,index,callback){
         if (index < fontList.length){
@@ -24,8 +25,11 @@ function TOFont (fontList,callback) {
                           toFont.notdef= font;
                           toFont.emoji = new TOEmojiFont();
                           toFont.emoji.load(function(error){
-                                                callback(error);
-                                            });
+                                            if(!error){
+                                                this.isReady = true;
+                                            }
+                                            callback(error);
+                                        });
                           
                 }
             });
@@ -52,7 +56,11 @@ function TOFont (fontList,callback) {
                    });
     
 };
-function TOParagraph (str,font,width,fontSize = 14) {
+function TOParagraph (str,font,width,fontSize) {
+    if(!fontSize){
+        fontSize = 14;
+    }
+    
     this.str = str;
     this.font = font;
     this.width = width;
@@ -120,8 +128,17 @@ function TOParagraph (str,font,width,fontSize = 14) {
         return {"width":this.width,"height":height};
     }
     
-    this.draw = function(ctx, x=0, y=0, scale = 2.0){
-        
+    this.draw = function(ctx, x, y, scale){
+        if(!x){
+            x=0;
+        }
+        if(!y){
+            y=0;
+        }
+        if(!scale){
+            scale=2.0;
+        }
+
         for (var key in this.lines){
             var line = this.lines[key];
             var lineHeight = line.getSize().height;
@@ -158,8 +175,16 @@ function TOLine (font,fontSize,lineStr) {
         
         return {"width":width,"height":height};
     };
-    this.draw = function (ctx, x = 0, y = 0, scale = 2.0){
-        
+    this.draw = function (ctx, x, y, scale){
+        if(!x){
+            x=0;
+        }
+        if(!y){
+            y=0;
+        }
+        if(!scale){
+            scale=2.0;
+        }
         x = x *scale;
         y = y *scale;
         var strArr = Array.from(this.lineStr);
