@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+            <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <page :scale="scale" :blocks="blocks"></page>
+
+<!--             <block  v-bind:scale="scale" v-bind:params="blocks[0]"></block>-->
+
+        </div>
+        
+        <script>
+            Vue.component('page', {
+                          props: ['scale','blocks'],
+                          data: {
+                          message: 'Hello'
+                          },
+                          render: function (createElement,context) {
+                                var children = [];
+                                var scale = this.scale;
+                                if(this.blocks){
+                                    for (i = 0;i<this.blocks.length; i++){
+                                        var item = this.blocks[i];
+                                        children.push(createElement('block', {params:item,scale:this.scale}));
+                                    }
+                                }
+                                return createElement('div', {},children);
+                          }
+            });
+        Vue.component('block', {
+                      props: ['params','scale'],
+                      <!--                      template: '<li>{{ text }}</li>',-->
+                      render: function (createElement,context) {
+                      var result = createElement('li', this.$data.params);
+                      return result;
+                      }
+                      });
+                      new Vue({
+                              el: '#app',
+                              data: {
+                              scale:2,
+                              blocks: [
+                                          { text: 'Runoob' },
+                                          { text: 'Google' },
+                                          { text: 'Taobao' }
+                                          ]
+                              }
+                              })
+            </script>
+    </body>
+</html>
