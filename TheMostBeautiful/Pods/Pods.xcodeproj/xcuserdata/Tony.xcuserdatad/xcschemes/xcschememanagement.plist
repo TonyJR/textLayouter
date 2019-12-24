@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -39,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ReactiveObjC.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -50,6 +60,11 @@
 			<false/>
 		</dict>
 		<key>TOPageView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TouchJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -67,7 +82,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0799DD7B356640129028A38AAE812711</key>
+		<key>09E8E5A5D149E32D1BD7093FBEEA5D0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>18F3FB0E66D51784E1922787815E9002</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39FC46D61E618C60A222A7F4F9A2240F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>45F3CDCA0D3255F7228B9AE3E6962520</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5155D3CF876164D881CA3325F272B0F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,16 +117,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>73DDDD194E8CB4AA32A1F71F9ED03C9B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8CF3E4FD70089E635F6C55E3AD1AC226</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
 		<dict>
 			<key>primary</key>
@@ -102,7 +127,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B429B80E4BC693D9EE3DBC61C3D00375</key>
+		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,7 +137,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F7068C3690888EC6A0FF662656EB3EFC</key>
+		<key>EC3709ABE884B7FD005EE1C5E7C3BAC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4A7648CDF3F3221FD3FF26FDA50F2DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

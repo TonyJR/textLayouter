@@ -15,6 +15,12 @@ source 'https://github.com/aliyun/aliyun-specs.git'
     pod 'MBProgressHUD'
     pod 'MessageThrottle'
     pod 'MJRefresh'
+    pod 'MJExtension'
+
     pod 'iCarousel'
     pod 'Masonry'
+    pod 'MBProgressHUD'
+    pod 'ReactiveObjC'
+#    pod 'DDLogger'
+    pod 'TouchJSON'
 end

@@ -16,10 +16,14 @@
 		EA96838123811ED700729C4C /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA96838023811ED700729C4C /* IndexViewController.m */; };
 		EA968387238145C100729C4C /* BookShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA968385238145C100729C4C /* BookShelfViewController.m */; };
 		EA968388238145C100729C4C /* BookShelfViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA968386238145C100729C4C /* BookShelfViewController.xib */; };
-		EA96838D2381462600729C4C /* TMBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA96838C2381462600729C4C /* TMBBaseViewController.m */; };
 		EA9683912381642C00729C4C /* TMBBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9683902381642C00729C4C /* TMBBookModel.m */; };
 		EA9683952381649500729C4C /* BookShelfCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9683932381649500729C4C /* BookShelfCollectionViewCell.m */; };
 		EA9683962381649500729C4C /* BookShelfCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9683942381649500729C4C /* BookShelfCollectionViewCell.xib */; };
+		EA9683DA2385A4DE00729C4C /* TipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9683D02385A4DE00729C4C /* TipManager.m */; };
+		EA9683DB2385A4DE00729C4C /* TMBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9683D22385A4DE00729C4C /* TMBBaseViewController.m */; };
+		EA9683DC2385A4DE00729C4C /* TMBHTTPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9683D52385A4DE00729C4C /* TMBHTTPHelper.m */; };
+		EA9683DD2385A4DE00729C4C /* TONetwork+TMB.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9683D72385A4DE00729C4C /* TONetwork+TMB.m */; };
+		EA9683DE2385A4DE00729C4C /* TOTask+TMB.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9683D92385A4DE00729C4C /* TOTask+TMB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,13 +45,22 @@
 		EA968384238145C100729C4C /* BookShelfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfViewController.h; sourceTree = "<group>"; };
 		EA968385238145C100729C4C /* BookShelfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfViewController.m; sourceTree = "<group>"; };
 		EA968386238145C100729C4C /* BookShelfViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookShelfViewController.xib; sourceTree = "<group>"; };
-		EA96838B2381462600729C4C /* TMBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBBaseViewController.h; sourceTree = "<group>"; };
-		EA96838C2381462600729C4C /* TMBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBBaseViewController.m; sourceTree = "<group>"; };
 		EA96838F2381642C00729C4C /* TMBBookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBBookModel.h; sourceTree = "<group>"; };
 		EA9683902381642C00729C4C /* TMBBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBBookModel.m; sourceTree = "<group>"; };
 		EA9683922381649500729C4C /* BookShelfCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCollectionViewCell.h; sourceTree = "<group>"; };
 		EA9683932381649500729C4C /* BookShelfCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfCollectionViewCell.m; sourceTree = "<group>"; };
 		EA9683942381649500729C4C /* BookShelfCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookShelfCollectionViewCell.xib; sourceTree = "<group>"; };
+		EA9683CF2385A4DE00729C4C /* TipManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipManager.h; sourceTree = "<group>"; };
+		EA9683D02385A4DE00729C4C /* TipManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipManager.m; sourceTree = "<group>"; };
+		EA9683D12385A4DE00729C4C /* TMBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBBaseViewController.h; sourceTree = "<group>"; };
+		EA9683D22385A4DE00729C4C /* TMBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBBaseViewController.m; sourceTree = "<group>"; };
+		EA9683D42385A4DE00729C4C /* TMBHTTPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBHTTPHelper.h; sourceTree = "<group>"; };
+		EA9683D52385A4DE00729C4C /* TMBHTTPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBHTTPHelper.m; sourceTree = "<group>"; };
+		EA9683D62385A4DE00729C4C /* TONetwork+TMB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TONetwork+TMB.h"; sourceTree = "<group>"; };
+		EA9683D72385A4DE00729C4C /* TONetwork+TMB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TONetwork+TMB.m"; sourceTree = "<group>"; };
+		EA9683D82385A4DE00729C4C /* TOTask+TMB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TOTask+TMB.h"; sourceTree = "<group>"; };
+		EA9683D92385A4DE00729C4C /* TOTask+TMB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TOTask+TMB.m"; sourceTree = "<group>"; };
+		EA9683DF2385A5C500729C4C /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +113,8 @@
 		EA774FEC238113B200901B9C /* TheMostBeautiful */ = {
 			isa = PBXGroup;
 			children = (
+				EA9683CC2385A4DE00729C4C /* utils */,
 				EA96838E2381640E00729C4C /* models */,
-				EA968389238145C700729C4C /* utils */,
 				EA968383238145AB00729C4C /* bookShelf */,
 				EA774FF0238113B200901B9C /* AppDelegate.h */,
 				EA774FF1238113B200901B9C /* AppDelegate.m */,
@@ -139,23 +152,6 @@
 			name = bookShelf;
 			sourceTree = "<group>";
 		};
-		EA968389238145C700729C4C /* utils */ = {
-			isa = PBXGroup;
-			children = (
-				EA96838A238145FB00729C4C /* BaseUI */,
-			);
-			name = utils;
-			sourceTree = "<group>";
-		};
-		EA96838A238145FB00729C4C /* BaseUI */ = {
-			isa = PBXGroup;
-			children = (
-				EA96838B2381462600729C4C /* TMBBaseViewController.h */,
-				EA96838C2381462600729C4C /* TMBBaseViewController.m */,
-			);
-			name = BaseUI;
-			sourceTree = "<group>";
-		};
 		EA96838E2381640E00729C4C /* models */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +159,48 @@
 				EA9683902381642C00729C4C /* TMBBookModel.m */,
 			);
 			name = models;
+			sourceTree = "<group>";
+		};
+		EA9683CC2385A4DE00729C4C /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA9683CD2385A4DE00729C4C /* baseUI */,
+				EA9683D32385A4DE00729C4C /* network */,
+				EA9683DF2385A5C500729C4C /* Global.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		EA9683CD2385A4DE00729C4C /* baseUI */ = {
+			isa = PBXGroup;
+			children = (
+				EA9683CE2385A4DE00729C4C /* tip */,
+				EA9683D12385A4DE00729C4C /* TMBBaseViewController.h */,
+				EA9683D22385A4DE00729C4C /* TMBBaseViewController.m */,
+			);
+			path = baseUI;
+			sourceTree = "<group>";
+		};
+		EA9683CE2385A4DE00729C4C /* tip */ = {
+			isa = PBXGroup;
+			children = (
+				EA9683CF2385A4DE00729C4C /* TipManager.h */,
+				EA9683D02385A4DE00729C4C /* TipManager.m */,
+			);
+			path = tip;
+			sourceTree = "<group>";
+		};
+		EA9683D32385A4DE00729C4C /* network */ = {
+			isa = PBXGroup;
+			children = (
+				EA9683D42385A4DE00729C4C /* TMBHTTPHelper.h */,
+				EA9683D52385A4DE00729C4C /* TMBHTTPHelper.m */,
+				EA9683D62385A4DE00729C4C /* TONetwork+TMB.h */,
+				EA9683D72385A4DE00729C4C /* TONetwork+TMB.m */,
+				EA9683D82385A4DE00729C4C /* TOTask+TMB.h */,
+				EA9683D92385A4DE00729C4C /* TOTask+TMB.m */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,14 +333,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9683DB2385A4DE00729C4C /* TMBBaseViewController.m in Sources */,
 				EA774FF5238113B200901B9C /* ViewController.m in Sources */,
 				EA774FF2238113B200901B9C /* AppDelegate.m in Sources */,
+				EA9683DE2385A4DE00729C4C /* TOTask+TMB.m in Sources */,
 				EA968387238145C100729C4C /* BookShelfViewController.m in Sources */,
-				EA96838D2381462600729C4C /* TMBBaseViewController.m in Sources */,
 				EA9683952381649500729C4C /* BookShelfCollectionViewCell.m in Sources */,
 				EA774FEF238113B200901B9C /* main.m in Sources */,
 				EA9683912381642C00729C4C /* TMBBookModel.m in Sources */,
 				EA96838123811ED700729C4C /* IndexViewController.m in Sources */,
+				EA9683DD2385A4DE00729C4C /* TONetwork+TMB.m in Sources */,
+				EA9683DA2385A4DE00729C4C /* TipManager.m in Sources */,
+				EA9683DC2385A4DE00729C4C /* TMBHTTPHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

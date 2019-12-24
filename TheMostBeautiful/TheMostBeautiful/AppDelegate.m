@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "IndexViewController.h"
+#import <TONetwork.h>
 
 @interface AppDelegate ()
 
@@ -27,6 +28,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
 
     [self.window makeKeyAndVisible];
+    
+    progressListenTo([TONetwork sharedNetwork],message);
+    
+    tipListenTo([TONetwork sharedNetwork],tip);
+
 
     return YES;
 }
