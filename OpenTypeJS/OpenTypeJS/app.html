@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hello React!</title>
+        <script src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js"></script>
+        <script src="./emoji_lib.js"></script>
+        <script src="./emoji.js"></script>
+        <script src="./font.js"></script>
+
+        <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+        <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+        <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+        <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+        <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+        
+    </head>
+    <body onload="loadData()">
+        
+        <div id="page1"></div>
+        
+        <script type="text/babel">
+            class TOBlock extends React.Component {
+                constructor(props){
+                    super(props);
+                    this.state = {
+                        paragraph : new TOParagraph(props.text,props.font,props.width,14);
+                    }
+                    /*
+                     this.state = {
+                     scale:this.props.scale,
+                     text:this.props.data.text,
+                     };*/
+                };
+                render() {
+                    
+                    return <canvas
+                    width={this.props.width * this.props.scale}
+                    height={this.state.getSize.height * this.props.scale}
+                    style={
+                        {
+                            position:"absolute",
+                            top:this.props.y + "px",
+                            left:this.props.x + "px",
+                            width:this.props.width+"px",
+                            height:this.state.getSize.height+"px",
+                        }
+                    }/>;
+                };
+                componentDidUpdate() {
+                    
+                    var canvas = ReactDOM.findDOMNode(this);
+                    if (canvas && this.props.font){
+                        var paragraph = new TOParagraph(this.props.text,this.props.font,this.props.width,14);
+                        paragraph.draw(canvas.getContext('2d'),0,0,this.props.scale);
+                    }
+                    /*
+                    var canvas = this.findDOMNode();
+                    canvas.getContext("2d");
+                     */
+                }
+            };
+            class TOPage extends React.Component {
+                
+                constructor(props){
+                    super(props);
+                    this.state = {
+                        blockList:[]
+                    }
+                };
+                
+                render(props) {
+                    if (this.state.blockList){
+                        var children = this.state.blockList.map((item) =>
+                                                                <TOBlock
+                                                                key={item.id}
+                                                                type={item.type}
+                                                                scale={this.props.scale}
+                                                                x={item.x}
+                                                                y={item.y}
+                                                                width={item.width}
+                                                                height={item.height}
+                                                                text={item.text}
+                                                                font={this.state.font}
+                                                                >
+                                                                </TOBlock>
+                                                                );
+                    }
+                    
+                    if(!children){
+                        children = [];
+                    }
+                    return <div>{children}</div>;
+                }
+            };
+            
+            var blockList = [{id:1,text:"1111",type:1,x:100,y:100,width:100,height:100},
+                             {id:2,text:"2222",type:1,x:100,y:200,width:100,height:100},
+                             {id:3,text:"3333",type:1,x:100,y:300,width:100,height:100},
+                             {id:4,text:"4444",type:1,x:100,y:400,width:100,height:100},
+                             {id:5,text:"5555",type:1,x:100,y:500,width:100,height:100},
+                             ];
+        
+        
+        </script>
+        <script type="text/babel" language="javascript">
+            var page;
+            function loadData (){
+                
+                page = ReactDOM.render(
+                                           
+                                           <TOPage scale="2" width="100" height="100"></TOPage>,
+                                           document.getElementById('page1')
+                                           );
+                page.setState({blockList:blockList});
+                                           
+                var toFont = new TOFont(["./wawati.ttf","./pangtouyuwawa.ttf"],
+                                    function(error){
+                                        if (!error){
+                                            page.setState({font:toFont});
+                                        }
+                                    });
+                                    /*
+                                    paragraph = new TOParagraph("1🐙鱻111\n234🙈🙉🙊🐵🐒🐶🐕🐩🐺🐱😺😸😹😻😼😽🙀😿😾🐈🐯🐅🐆🐴🐎🐮🐂🐃🐄🐷🐖🐗🐽🐏🐑🐐🐪🐫🐘🐭🐁🐀🐹🐰🐇🐻🐨🐼🐾🐔🐓🐣🐤🐥🐦🐧🐸🐊🐢🐍🐲🐉🐳🐋🐬🐟🐠🐡🐙🐚🐌🐛🐜🐝🐞🦋\
+                                                                💐🌸💮🌹🌺🌻🌼🌷🌱🌲🌳🌴🌵🌾🌿🍀🍁🍂🍃567890abcdefghijklmnopqrstuvwxyz中文测试哈哈哈哈哈翟燹鱻",toFont,300,14);
+                                    paragraph.draw(document.getElementById("canvas1").getContext('2d'),0,20,2);
+                                    */
+                                    
+                                    
+            }
+        </script>
+    </body>
+</html>

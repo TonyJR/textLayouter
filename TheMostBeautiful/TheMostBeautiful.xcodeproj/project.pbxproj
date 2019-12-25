@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CCF789D0D1DE2D9A3E41474 /* libPods-TheMostBeautiful.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F004FAB84D302BDFC4F661 /* libPods-TheMostBeautiful.a */; };
+		EA774FEF238113B200901B9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA774FEE238113B200901B9C /* main.m */; };
+		EA774FF2238113B200901B9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA774FF1238113B200901B9C /* AppDelegate.m */; };
+		EA774FF5238113B200901B9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA774FF4238113B200901B9C /* ViewController.m */; };
+		EA774FFA238113B200901B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA774FF9238113B200901B9C /* Assets.xcassets */; };
+		EA774FFD238113B200901B9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA774FFB238113B200901B9C /* LaunchScreen.storyboard */; };
+		EA96838123811ED700729C4C /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA96838023811ED700729C4C /* IndexViewController.m */; };
+		EA968387238145C100729C4C /* BookShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA968385238145C100729C4C /* BookShelfViewController.m */; };
+		EA968388238145C100729C4C /* BookShelfViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA968386238145C100729C4C /* BookShelfViewController.xib */; };
+		EA96838D2381462600729C4C /* TMBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA96838C2381462600729C4C /* TMBBaseViewController.m */; };
+		EA9683912381642C00729C4C /* TMBBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9683902381642C00729C4C /* TMBBookModel.m */; };
+		EA9683952381649500729C4C /* BookShelfCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9683932381649500729C4C /* BookShelfCollectionViewCell.m */; };
+		EA9683962381649500729C4C /* BookShelfCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9683942381649500729C4C /* BookShelfCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5CF022D7F1B2C0C365D6C8EC /* Pods-TheMostBeautiful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMostBeautiful.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheMostBeautiful/Pods-TheMostBeautiful.debug.xcconfig"; sourceTree = "<group>"; };
+		7D938C0CB2A1AC6337A47E44 /* Pods-TheMostBeautiful.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMostBeautiful.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheMostBeautiful/Pods-TheMostBeautiful.release.xcconfig"; sourceTree = "<group>"; };
+		E1F004FAB84D302BDFC4F661 /* libPods-TheMostBeautiful.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheMostBeautiful.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA774FEA238113B200901B9C /* TheMostBeautiful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMostBeautiful.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA774FEE238113B200901B9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA774FF0238113B200901B9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA774FF1238113B200901B9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA774FF3238113B200901B9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EA774FF4238113B200901B9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA774FF9238113B200901B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA774FFC238113B200901B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA774FFE238113B200901B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA96837F23811ED700729C4C /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		EA96838023811ED700729C4C /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		EA9683822381205800729C4C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EA968384238145C100729C4C /* BookShelfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfViewController.h; sourceTree = "<group>"; };
+		EA968385238145C100729C4C /* BookShelfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfViewController.m; sourceTree = "<group>"; };
+		EA968386238145C100729C4C /* BookShelfViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookShelfViewController.xib; sourceTree = "<group>"; };
+		EA96838B2381462600729C4C /* TMBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBBaseViewController.h; sourceTree = "<group>"; };
+		EA96838C2381462600729C4C /* TMBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBBaseViewController.m; sourceTree = "<group>"; };
+		EA96838F2381642C00729C4C /* TMBBookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBBookModel.h; sourceTree = "<group>"; };
+		EA9683902381642C00729C4C /* TMBBookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBBookModel.m; sourceTree = "<group>"; };
+		EA9683922381649500729C4C /* BookShelfCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCollectionViewCell.h; sourceTree = "<group>"; };
+		EA9683932381649500729C4C /* BookShelfCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfCollectionViewCell.m; sourceTree = "<group>"; };
+		EA9683942381649500729C4C /* BookShelfCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookShelfCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA774FE7238113B200901B9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CCF789D0D1DE2D9A3E41474 /* libPods-TheMostBeautiful.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A2624A248BEA2681FEFA194 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1F004FAB84D302BDFC4F661 /* libPods-TheMostBeautiful.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C44814837FA905810C1549A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CF022D7F1B2C0C365D6C8EC /* Pods-TheMostBeautiful.debug.xcconfig */,
+				7D938C0CB2A1AC6337A47E44 /* Pods-TheMostBeautiful.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA774FE1238113B200901B9C = {
+			isa = PBXGroup;
+			children = (
+				EA774FEC238113B200901B9C /* TheMostBeautiful */,
+				EA774FEB238113B200901B9C /* Products */,
+				6C44814837FA905810C1549A /* Pods */,
+				0A2624A248BEA2681FEFA194 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA774FEB238113B200901B9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA774FEA238113B200901B9C /* TheMostBeautiful.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA774FEC238113B200901B9C /* TheMostBeautiful */ = {
+			isa = PBXGroup;
+			children = (
+				EA96838E2381640E00729C4C /* models */,
+				EA968389238145C700729C4C /* utils */,
+				EA968383238145AB00729C4C /* bookShelf */,
+				EA774FF0238113B200901B9C /* AppDelegate.h */,
+				EA774FF1238113B200901B9C /* AppDelegate.m */,
+				EA774FF3238113B200901B9C /* ViewController.h */,
+				EA774FF4238113B200901B9C /* ViewController.m */,
+				EA774FF9238113B200901B9C /* Assets.xcassets */,
+				EA774FFB238113B200901B9C /* LaunchScreen.storyboard */,
+				EA774FFE238113B200901B9C /* Info.plist */,
+				EA774FED238113B200901B9C /* Supporting Files */,
+				EA96837F23811ED700729C4C /* IndexViewController.h */,
+				EA96838023811ED700729C4C /* IndexViewController.m */,
+				EA9683822381205800729C4C /* PrefixHeader.pch */,
+			);
+			path = TheMostBeautiful;
+			sourceTree = "<group>";
+		};
+		EA774FED238113B200901B9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA774FEE238113B200901B9C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA968383238145AB00729C4C /* bookShelf */ = {
+			isa = PBXGroup;
+			children = (
+				EA968384238145C100729C4C /* BookShelfViewController.h */,
+				EA968385238145C100729C4C /* BookShelfViewController.m */,
+				EA968386238145C100729C4C /* BookShelfViewController.xib */,
+				EA9683922381649500729C4C /* BookShelfCollectionViewCell.h */,
+				EA9683932381649500729C4C /* BookShelfCollectionViewCell.m */,
+				EA9683942381649500729C4C /* BookShelfCollectionViewCell.xib */,
+			);
+			name = bookShelf;
+			sourceTree = "<group>";
+		};
+		EA968389238145C700729C4C /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA96838A238145FB00729C4C /* BaseUI */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		EA96838A238145FB00729C4C /* BaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				EA96838B2381462600729C4C /* TMBBaseViewController.h */,
+				EA96838C2381462600729C4C /* TMBBaseViewController.m */,
+			);
+			name = BaseUI;
+			sourceTree = "<group>";
+		};
+		EA96838E2381640E00729C4C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				EA96838F2381642C00729C4C /* TMBBookModel.h */,
+				EA9683902381642C00729C4C /* TMBBookModel.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA774FE9238113B200901B9C /* TheMostBeautiful */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA775001238113B200901B9C /* Build configuration list for PBXNativeTarget "TheMostBeautiful" */;
+			buildPhases = (
+				52FE94745210235945467623 /* [CP] Check Pods Manifest.lock */,
+				EA774FE6238113B200901B9C /* Sources */,
+				EA774FE7238113B200901B9C /* Frameworks */,
+				EA774FE8238113B200901B9C /* Resources */,
+				D845F640FE335F3078784825 /* [CP] Embed Pods Frameworks */,
+				2B9F5241C3FAC78EE55429AC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheMostBeautiful;
+			productName = TheMostBeautiful;
+			productReference = EA774FEA238113B200901B9C /* TheMostBeautiful.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA774FE2238113B200901B9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Tony;
+				TargetAttributes = {
+					EA774FE9238113B200901B9C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8YWC8ZUV92;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EA774FE5238113B200901B9C /* Build configuration list for PBXProject "TheMostBeautiful" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA774FE1238113B200901B9C;
+			productRefGroup = EA774FEB238113B200901B9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA774FE9238113B200901B9C /* TheMostBeautiful */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA774FE8238113B200901B9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA9683962381649500729C4C /* BookShelfCollectionViewCell.xib in Resources */,
+				EA774FFD238113B200901B9C /* LaunchScreen.storyboard in Resources */,
+				EA774FFA238113B200901B9C /* Assets.xcassets in Resources */,
+				EA968388238145C100729C4C /* BookShelfViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B9F5241C3FAC78EE55429AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TheMostBeautiful/Pods-TheMostBeautiful-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheMostBeautiful/Pods-TheMostBeautiful-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52FE94745210235945467623 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheMostBeautiful-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D845F640FE335F3078784825 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheMostBeautiful/Pods-TheMostBeautiful-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA774FE6238113B200901B9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA774FF5238113B200901B9C /* ViewController.m in Sources */,
+				EA774FF2238113B200901B9C /* AppDelegate.m in Sources */,
+				EA968387238145C100729C4C /* BookShelfViewController.m in Sources */,
+				EA96838D2381462600729C4C /* TMBBaseViewController.m in Sources */,
+				EA9683952381649500729C4C /* BookShelfCollectionViewCell.m in Sources */,
+				EA774FEF238113B200901B9C /* main.m in Sources */,
+				EA9683912381642C00729C4C /* TMBBookModel.m in Sources */,
+				EA96838123811ED700729C4C /* IndexViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA774FFB238113B200901B9C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA774FFC238113B200901B9C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA774FFF238113B200901B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA775000238113B200901B9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA775002238113B200901B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CF022D7F1B2C0C365D6C8EC /* Pods-TheMostBeautiful.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8YWC8ZUV92;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TheMostBeautiful/PrefixHeader.pch";
+				INFOPLIST_FILE = TheMostBeautiful/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.TheMostBeautiful;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA775003238113B200901B9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D938C0CB2A1AC6337A47E44 /* Pods-TheMostBeautiful.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8YWC8ZUV92;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TheMostBeautiful/PrefixHeader.pch";
+				INFOPLIST_FILE = TheMostBeautiful/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coco3g.TheMostBeautiful;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA774FE5238113B200901B9C /* Build configuration list for PBXProject "TheMostBeautiful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA774FFF238113B200901B9C /* Debug */,
+				EA775000238113B200901B9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA775001238113B200901B9C /* Build configuration list for PBXNativeTarget "TheMostBeautiful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA775002238113B200901B9C /* Debug */,
+				EA775003238113B200901B9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA774FE2238113B200901B9C /* Project object */;
+}
