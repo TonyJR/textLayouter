@@ -13,11 +13,19 @@
             buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
+<<<<<<< HEAD
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F7068C3690888EC6A0FF662656EB3EFC"
                BuildableName = "libTOPageView.a"
                BlueprintName = "TOPageView"
                ReferencedContainer = "container:Pods.xcodeproj">
+=======
+               BuildableIdentifier = 'primary'
+               BlueprintIdentifier = '5155D3CF876164D881CA3325F272B0F7'
+               BlueprintName = 'TOPageView'
+               ReferencedContainer = 'container:Pods.xcodeproj'
+               BuildableName = 'libTOPageView.a'>
+>>>>>>> 7c7875fa0d08c9aac66c7e1f45981c3ac7fa19fa
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

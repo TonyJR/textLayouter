@@ -32,7 +32,7 @@
                         }),
 
                         ];
-    [self.titleView reloadData];
+    [result.titleView updateConstraints];
     return result;
 }
 

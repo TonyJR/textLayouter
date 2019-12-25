@@ -11,9 +11,15 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "TMBBaseViewController.h"
+#import "Global.h"
+#import "TipManager.h"
+
 #import <Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>
-#import "TMBBaseViewController.h"
+#import <TOTask.h>
+#import <ReactiveObjC.h>
+#import <MJExtension.h>
 
 #define kScreenBounds [UIScreen mainScreen].bounds
 #define kScreenWidth (int)kScreenBounds.size.width

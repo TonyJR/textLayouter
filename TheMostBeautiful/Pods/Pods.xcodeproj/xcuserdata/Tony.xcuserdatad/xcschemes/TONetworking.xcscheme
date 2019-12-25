@@ -13,11 +13,19 @@
             buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
+<<<<<<< HEAD
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8CF3E4FD70089E635F6C55E3AD1AC226"
                BuildableName = "libTONetworking.a"
                BlueprintName = "TONetworking"
                ReferencedContainer = "container:Pods.xcodeproj">
+=======
+               BuildableIdentifier = 'primary'
+               BlueprintIdentifier = '09E8E5A5D149E32D1BD7093FBEEA5D0B'
+               BlueprintName = 'TONetworking'
+               ReferencedContainer = 'container:Pods.xcodeproj'
+               BuildableName = 'libTONetworking.a'>
+>>>>>>> 7c7875fa0d08c9aac66c7e1f45981c3ac7fa19fa
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -13,11 +13,19 @@
             buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
+<<<<<<< HEAD
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B429B80E4BC693D9EE3DBC61C3D00375"
                BuildableName = "libPods-TheMostBeautiful.a"
                BlueprintName = "Pods-TheMostBeautiful"
                ReferencedContainer = "container:Pods.xcodeproj">
+=======
+               BuildableIdentifier = 'primary'
+               BlueprintIdentifier = 'EC3709ABE884B7FD005EE1C5E7C3BAC4'
+               BlueprintName = 'Pods-TheMostBeautiful'
+               ReferencedContainer = 'container:Pods.xcodeproj'
+               BuildableName = 'libPods-TheMostBeautiful.a'>
+>>>>>>> 7c7875fa0d08c9aac66c7e1f45981c3ac7fa19fa
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
