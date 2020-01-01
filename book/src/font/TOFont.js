@@ -62,7 +62,7 @@ class TOFont{
             fontFamily = "./wawati.ttf";
         }
         this.loadFonts(this,fontFamily.split(","),0,(error)=>{
-            callback(error);
+            callback(error,this);
             });
     }
     
