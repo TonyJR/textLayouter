@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        </style>
+        <script  src="./gl-matrix-min.js"></script>
+    </head>
+    <body onload="begin()">
+        <div style="position: absolute;top: 100px;left: 100px; width: 200px;height: 120px;">
+                <div id="container" style="position: absolute;top: -120px;left: 0px; width: 200px;height: 360px;clip: rect(0px,200px,360px,0px);">
+                    <div id="image1"  style="position: absolute;top: 120px;left: 100px; width: 100px; height: 120px;">
+                        <img src="1.jpg" style="width: 100%;height: 100%;"/>
+                    </div>
+                    <div id="image2" style="position: absolute;top: 120px;left: 100px; width: 100px; height: 120px;">
+                        <img src="2.jpg" style="width: 100%;height: 100%;"/>
+                    </div>
+                </div>
+        </div>
+        
+       
+        <script>
+            function begin(){
+                window.requestAnimationFrame(step);
+            }
+            function step(timestamp){
+                progress(timestamp/2000);
+                if (timestamp < 2000) {
+                    window.requestAnimationFrame(step);
+                }
+            }
+            function progress(p){
+                if (p<0){
+                    p = 0;
+                }
+                if (p>1){
+                    p = 1;
+                }
+
+                var move = glMatrix.vec2.fromValues(-100 *(1-p),0);
+
+                var r = 3.14/180*15 *  (1 - Math.pow((1 - p),2));
+                var offset = glMatrix.vec2.fromValues(100,60);
+                var unoffset = glMatrix.vec2.fromValues(-100,-60);
+
+                var containerMatrix = glMatrix.mat2d.create();
+                glMatrix.mat2d.translate(containerMatrix,containerMatrix,move);
+                containerMatrix = rotate(containerMatrix,100,60,r);
+
+                
+                var invertContainerMatrix = glMatrix.mat2d.create();
+                var image1Matrix = glMatrix.mat2d.fromValues(1,0,0,1,0,0);
+                glMatrix.mat2d.invert(invertContainerMatrix,containerMatrix);
+
+                offset = glMatrix.vec2.fromValues(-50,0);
+                unoffset = glMatrix.vec2.fromValues(50,0);
+                glMatrix.mat2d.translate(image1Matrix,image1Matrix,offset);
+                glMatrix.mat2d.multiply(image1Matrix,image1Matrix,invertContainerMatrix);
+                glMatrix.mat2d.translate(image1Matrix,image1Matrix,unoffset);
+
+                var image2Matrix = glMatrix.mat2d.fromValues(1,0,0,1,100,0);
+                image2Matrix = rotate(image2Matrix,-50,60,r);
+                glMatrix.mat2d.translate(image2Matrix,image2Matrix,move);
+                
+                document.getElementById("container").style.transform = glMatrix.mat2d.str(containerMatrix).replace("mat2d","matrix");
+
+                document.getElementById("image1").style.transform = glMatrix.mat2d.str(image1Matrix).replace("mat2d","matrix");
+                document.getElementById("image2").style.transform = glMatrix.mat2d.str(image2Matrix).replace("mat2d","matrix");
+            }
+
+            function rotate(matrix,cx,cy,r){
+                var offset = glMatrix.vec2.fromValues(cx,cy);
+                var unoffset = glMatrix.vec2.fromValues(-cx,-cy);
+                glMatrix.mat2d.translate(matrix,matrix,offset);
+                glMatrix.mat2d.rotate(matrix,matrix,r);
+                glMatrix.mat2d.translate(matrix,matrix,unoffset);
+                return matrix;
+            }
+        </script>
+    </body>
+</html>

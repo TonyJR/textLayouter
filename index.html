@@ -2,54 +2,55 @@
 <html>
     <head>
         <meta charset="utf-8">
-            <title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
-            <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+            <style>
+                *{margin:0;box-sizing:border-box;}
+        body{
+            padding:50px 0;
+            background: #eee;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 20px;
+        }
+        .page-wrap,.page-inner{
+            margin:0 auto;
+            width:600px;
+            padding:50px 0 0 60px;
+            background:#fff;
+            /* border-radius: 20px; */
+            text-align: justify;
+        }
+        .page-inner{
+            padding:0 60px 40px 0;
+        }
+        .page-wrap{
+            position: relative;
+            /* 高斯模糊，过滤器 */
+            filter:drop-shadow(0px 0px 15px #bbb);
+        }
+        .page-wrap:before{
+            content:'';
+            display: block;
+            position: absolute;
+            right:-60px;
+            top:0;
+            width:60px;
+            height:50px;
+            background: linear-gradient(42deg,rgb(221, 221, 221) 30%,rgba(0,0,0,0) 40%)
+        }
+        h1{
+            margin-bottom: 20px;text-align:center;
+        }
+        p{
+            text-indent: 2em;margin-bottom: 5px;
+        }
+            </style>
     </head>
     <body>
-        <div id="app">
-            <page :scale="scale" :blocks="blocks"></page>
-
-<!--             <block  v-bind:scale="scale" v-bind:params="blocks[0]"></block>-->
-
+        <div class="page-wrap">
+            <div class="page-inner">
+                <h1>标题标题</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio exercitationem odit aperiam totam alias, nemo veniam magni asperiores repudiandae commodi dignissimos incidunt est enim soluta reiciendis corporis aliquid quae sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quidem perferendis nesciunt ea temporibus tempore molestias, sunt non recusandae maiores nostrum necessitatibus voluptas dignissimos earum quisquam blanditiis cum iusto asperiores!</p>
+            </div>
         </div>
-        
-        <script>
-            Vue.component('page', {
-                          props: ['scale','blocks'],
-                          data: {
-                          message: 'Hello'
-                          },
-                          render: function (createElement,context) {
-                                var children = [];
-                                var scale = this.scale;
-                                if(this.blocks){
-                                    for (i = 0;i<this.blocks.length; i++){
-                                        var item = this.blocks[i];
-                                        children.push(createElement('block', {params:item,scale:this.scale}));
-                                    }
-                                }
-                                return createElement('div', {},children);
-                          }
-            });
-        Vue.component('block', {
-                      props: ['params','scale'],
-                      <!--                      template: '<li>{{ text }}</li>',-->
-                      render: function (createElement,context) {
-                      var result = createElement('li', this.$data.params);
-                      return result;
-                      }
-                      });
-                      new Vue({
-                              el: '#app',
-                              data: {
-                              scale:2,
-                              blocks: [
-                                          { text: 'Runoob' },
-                                          { text: 'Google' },
-                                          { text: 'Taobao' }
-                                          ]
-                              }
-                              })
-            </script>
     </body>
 </html>
