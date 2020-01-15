@@ -1,12 +1,14 @@
 import React from "react";
 import { TOPaper } from "./TOPaper";
 
+var TOBookShowType = {double:2,single:1};
+
 class TOBook extends React.Component {
     constructor(props){
         super(props);
-        const {buffer,width,height,progress,paperIndex = 0} = props;
+        const {buffer,width,height,progress,paperIndex = 0,showType = TOBookShowType.double} = props;
         this.state = {
-            buffer,width,height,progress,paperIndex
+            buffer,width,height,progress,paperIndex,showType
         }
     };
 
